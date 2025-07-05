@@ -1,0 +1,17 @@
+IP[127.0.0.1] : Port[56470] : Received registration data from Storage Server with fd [7]
+
+IP[127.0.0.1] : Port[56470] : Registered a Storage Server with fd [7]
+
+IP[127.0.0.1] : Port[47768] : Accepted connection from Client fd[8]
+
+IP[127.0.0.1] : Port[47770] : Accepted connection from Client fd[10]
+
+Recieved: 'ls .' -from- Client fd[8]
+Recieved: 'write -s ./mouli/a.txt' -from- Client fd[8]
+Sending: 'Storage server not found' -to- Client fd[8]
+Recieved: 'rm ./mouli/a.txt' -from- Client fd[10]
+Sending: 'rm ./mouli/a.txt' -to- Storage Server fd[7]
+recieved: 'Removed file @ ./mouli/a.txt
+' -from- Storage Server fd[7]
+Sending: 'Removed file @ ./mouli/a.txt
+' -to- Client fd[10]
